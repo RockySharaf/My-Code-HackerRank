@@ -1,0 +1,31 @@
+#include <bits/stdc++.h>
+#include <cstdio>
+using namespace std;
+
+int main() {
+    int a, b;
+    cin>>a>>b;
+    for(int i = a ; i<=min(9,b) ; i++)
+    {
+        if(a==1) cout<<"one\n";
+        if(a==2) cout<<"two\n";
+        if(a==3) cout<<"three\n";
+        if(a==4) cout<<"four\n";
+        if(a==5) cout<<"five\n";
+        if(a==6) cout<<"six\n";
+        if(a==7) cout<<"seven\n";
+        if(a==8) cout<<"eight\n";
+        if(a==9) cout<<"nine\n"; 
+          a++;
+
+        
+    }
+    for(int i = 9 ; i< b; i++)
+    {
+        if(i&1) cout<<"even\n";
+        else cout<<"odd\n";
+    }
+   
+    
+    return 0;
+}
